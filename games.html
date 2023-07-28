@@ -18,18 +18,17 @@
       <nav class="main-nav">
         <li>
           <a class="main-nav__item" href="index.html" id="games-button">
-            <svg class="main-nav__svg-games" width="24" height="24">
-              <use xlink:href="img/icons/stack.svg#home-icon"></use>
-            </svg>
             <p class="main-nav__item-text">Home</p>
           </a>
         </li>
         <li>
           <a class="main-nav__item" id="watch-button">
-            <svg class="main-nav__svg-watch" width="24" height="24">
-              <use xlink:href="img/icons/stack.svg#heart-icon"></use>
-            </svg>
             <p class="main-nav__item-text">Wish</p>
+          </a>
+        </li>
+        <li>
+          <a class="main-nav__item" id="rating-button">
+            <p class="main-nav__item-text">Rating</p>
           </a>
         </li>
       </nav>
@@ -41,6 +40,12 @@
           <div class="games__text-wrapper">
             <p class="games__name"></p>
             <p class="games__genre"></p>
+            <div class="games__raiting-wrapper">
+              <svg class="genre__svg" width="24" height="24">
+                <use xlink:href="img/icons/stack.svg#star-icon"></use>
+              </svg>
+              <p class="games__img-raiting">8</p>
+            </div>
           </div>
         </a>
       </li>
