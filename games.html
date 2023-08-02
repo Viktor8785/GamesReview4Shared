@@ -3,53 +3,53 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Games Review4</title>
+    <title>Games Hub</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <section class="games">
-      <div class="games__wrapper">
-        <h1 class="games__title"></h1>
-        <ul class="games__list">
-        </ul>
-      </div>
-    </section>
-    <footer class="footer">
-      <nav class="main-nav">
-        <li>
-          <a class="main-nav__item" href="index.html" id="games-button">
-            <p class="main-nav__item-text">Home</p>
-          </a>
-        </li>
-        <li>
-          <a class="main-nav__item" id="watch-button">
-            <p class="main-nav__item-text">Wish</p>
-          </a>
-        </li>
-        <li>
-          <a class="main-nav__item" id="rating-button">
-            <p class="main-nav__item-text">Rating</p>
-          </a>
-        </li>
-      </nav>
-    </footer>
-    <template id="element-template">
-      <li class="games__item">
-        <a href="game.html" class="games__link">
-          <img class="games__img" src="" alt="">
-          <div class="games__text-wrapper">
-            <p class="games__name"></p>
-            <p class="games__genre"></p>
-            <div class="games__raiting-wrapper">
-              <svg class="genre__svg" width="24" height="24">
+    <template id="item-template">
+      <li class="list__item">
+        <a href="game.html" class="list__link">
+          <img class="list__img" src="" alt="">
+          <div class="list__text-wrapper">
+            <p class="list__name"></p>
+            <p class="list__genre"></p>
+            <div class="list__raiting-wrapper">
+              <svg class="category__svg" width="24" height="24">
                 <use xlink:href="img/icons/stack.svg#star-icon"></use>
               </svg>
-              <p class="games__img-raiting">8</p>
+              <p class="list__img-raiting">8</p>
             </div>
           </div>
         </a>
       </li>
     </template>
-    <script src="js/games.js" type="module" defer></script>
+    <div class="list">
+      <div class="list__wrapper">
+        <h1 class="list__title"></h1>
+        <ul class="list__list">
+        </ul>
+      </div>
+    </div>
+    <div class="page-end">
+      <nav class="menu">
+        <li>
+          <a class="menu__item" href="index.html">
+            <p class="menu__item-text">Home</p>
+          </a>
+        </li>
+        <li>
+          <a class="menu__item" id="wish-button">
+            <p class="menu__item-text">Wish</p>
+          </a>
+        </li>
+        <li>
+          <a class="menu__item" id="rating-button">
+            <p class="menu__item-text">Rating</p>
+          </a>
+        </li>
+      </nav>
+    </div>
+    <script src="js/list.js" type="module" defer></script>
   </body>
 </html>
